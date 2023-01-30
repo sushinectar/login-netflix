@@ -13,6 +13,7 @@ input {
     background: #2e2e2e;
     border: 0;
     margin-bottom: 0.1rem;
+    color: #AAA;
 }
 
 button {
@@ -20,6 +21,12 @@ button {
     border: 1px solid #4d4d4d;
     color: #AAA;
     margin: 1.2rem 0;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    margin: 1.2rem auto;
+    color: #AAA;
 }
 
 .container {
