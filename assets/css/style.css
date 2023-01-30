@@ -1,0 +1,30 @@
+body {
+    background: #181818;
+}
+
+input, button {
+    height: 4rem;
+    font-size: 1.2rem;
+    padding: 0 1.2rem;
+    border-radius: 0.3rem;
+}
+
+input {
+    background: #2e2e2e;
+    border: 0;
+    margin-bottom: 0.1rem;
+}
+
+button {
+    background: #181818;
+    border: 1px solid #4d4d4d;
+    color: #AAA;
+    margin: 1.2rem 0;
+}
+
+.container {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
