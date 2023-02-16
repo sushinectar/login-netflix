@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+  </head>
+  <body>
     <div class="container">
-        <img src="./assets/img/logo-netflix.png" alt="logo-netflix">
-        <input type="email" placeholder="Email"/>
-        <input type="password" placeholder="Password">
-        <button>Sign In</button>
-        <a href="./assets/html/forgot.html">Forgot your Password?</a>
+      <img src="./assets/img/logo-netflix.png" alt="logo-netflix" />
+      <div>
+        <div class="input-group">
+          <div class="input-email">
+            <label class="email-label">E-mail</label>
+            <input
+              type="email"
+              spellcheck="false"
+              class="email-field"
+              onkeyup="validateEmail()"
+            />
+            <span class="email-error"></span>
+          </div>
+          <div class="input-pass">
+            <label class="pass-label">Password</label>
+            <input
+              type="password"
+              spellcheck="false"
+              class="pass-field"
+              onkeyup="validatePass()"
+            />
+            <span class="pass-error"></span>
+          </div>
+        </div>
+      </div>
+      <button class="sign">Sign In</button>
+      <a href="./assets/html/forgot.html">Forgot your Password?</a>
     </div>
-</body>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

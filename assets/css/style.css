@@ -1,37 +1,109 @@
 body {
-    background: #181818;
+  background: #181818;
 }
 
-input, button {
-    height: 4rem;
-    font-size: 1.2rem;
-    padding: 0 1.2rem;
-    border-radius: 0.3rem;
+input,
+button {
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
 }
 
 input {
-    background: #2e2e2e;
-    border: 0;
-    margin-bottom: 0.1rem;
-    color: #AAA;
+  height: 3rem;
+  background: #2e2e2e;
+  border: 0;
+  margin-bottom: 2.5rem;
+  color: #aaa;
+  transition: 0.3s;
 }
 
 button {
-    background: #181818;
-    border: 1px solid #4d4d4d;
-    color: #AAA;
-    margin: 1.2rem 0;
+  height: 4rem;
+  background: #181818;
+  border: 1px solid #4d4d4d;
+  color: #aaa;
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4d4d4d;
+  color: #181818;
+  transition: 0.3s;
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
-    margin: 1.2rem auto;
-    color: #AAA;
+  font-family: "Roboto", sans-serif;
+  margin: 1.2rem auto;
+  color: #aaa;
 }
 
 .container {
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.input-email {
+  width: 100%;
+  position: relative;
+}
+
+.input-pass {
+  width: 100%;
+  position: relative;
+}
+
+.email-label {
+  position: absolute;
+  bottom: 3.8rem;
+  left: 2px;
+  color: #aaa;
+  font-family: "Roboto", sans-serif;
+  transition: bottom 0.3s;
+}
+
+.email-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #4d4d4d;
+  background: transparent;
+  outline: none;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+
+.email-error {
+  position: absolute;
+  top: 100%;
+  left: 2px;
+  font-family: "Roboto", sans-serif;
+  color: #e50914;
+  transition: top 0.5s;
+}
+
+.pass-label {
+  position: absolute;
+  bottom: 3.8rem;
+  left: 2px;
+  color: #aaa;
+  font-family: "Roboto", sans-serif;
+  transition: bottom 0.3s;
+}
+
+.pass-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #4d4d4d;
+  background: transparent;
+  outline: none;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+
+.sign {
+  margin: 0 0 0.5rem;
 }
