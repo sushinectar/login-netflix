@@ -1,11 +1,11 @@
 body {
   background: #181818;
+  font-family: "Roboto", sans-serif;
 }
 
 input,
 button {
   font-size: 1.2rem;
-  border-radius: 0.3rem;
 }
 
 input {
@@ -33,9 +33,13 @@ button:hover {
 }
 
 a {
-  font-family: "Roboto", sans-serif;
   margin: 1.2rem auto;
   color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -60,7 +64,6 @@ a {
   bottom: 3.8rem;
   left: 2px;
   color: #aaa;
-  font-family: "Roboto", sans-serif;
   transition: bottom 0.3s;
 }
 
@@ -73,13 +76,18 @@ a {
   padding: 5px 2px;
   position: relative;
   z-index: 10;
+  transition: all 0.5s;
+}
+
+.email-field:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .email-error {
   position: absolute;
   top: 100%;
   left: 2px;
-  font-family: "Roboto", sans-serif;
   color: #e50914;
   transition: top 0.5s;
 }
@@ -89,7 +97,6 @@ a {
   bottom: 3.8rem;
   left: 2px;
   color: #aaa;
-  font-family: "Roboto", sans-serif;
   transition: bottom 0.3s;
 }
 
@@ -102,8 +109,21 @@ a {
   padding: 5px 2px;
   position: relative;
   z-index: 10;
+  transition: all 0.5s;
+}
+
+.pass-field:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .sign {
   margin: 0 0 0.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.sign:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }

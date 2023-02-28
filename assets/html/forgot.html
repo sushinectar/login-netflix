@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/forgot.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../img/logo-netflix.png" alt="logo netflix" />
+      <a class="enter-link" href="/index.html"><b>Sign In</b></a>
+    </header>
+    <form class="container">
+      <h1>Forgot my e-mail / Password</h1>
+      <p>How do you prefer to reset your password?</p>
+
+      <div class="radio-wrapper">
+        <input
+          type="radio"
+          name="choice"
+          id="choice1"
+          value="email"
+          onclick="showEmail()"
+        />
+        <label class="choice1" for="choice1">Email</label>
+      </div>
+
+      <div class="radio-wrapper">
+        <input
+          type="radio"
+          name="choice"
+          id="choice2"
+          value="text"
+          onclick="showText()"
+        />
+        <label class="choice2" for="choice2">Text message</label>
+      </div>
+
+      <div class="email-choice">
+        <p>
+          We will send you an email with instructions on how to reset your
+          password.
+        </p>
+        <input
+          type="email"
+          name="resetEmail"
+          id="resetEmail"
+          placeholder="E-mail"
+        />
+        <button class="submitEmail" type="submit">Send by email</button>
+      </div>
+      <div class="text-choice">
+        <p>
+          We will send you a text message with a password reset code. Charges
+          apply for data and messaging usage.
+        </p>
+        <input
+          type="tel"
+          name="resetText"
+          id="resetText"
+          placeholder="(xx) xxxxx - xxxx    "
+        />
+        <button class="submitText" type="submit">Send by Text</button>
+      </div>
+    </form>
+
+    <script src="../js/modules/forgot.js"></script>
+  </body>
+</html>
