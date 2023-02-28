@@ -2,4 +2,7 @@
   .container {
     width: 20rem;
   }
+  .container-forgot {
+    width: 15rem;
+  }
 }
