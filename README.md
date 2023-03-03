@@ -1,6 +1,6 @@
 # About the Project
 
-- https://sushinectar.github.io/project-snk
+- https://sushinectar.github.io/login-netflix
 
 This login page is nothing more than a representation of "Netflix", however, improved in my view.
 
